@@ -26,7 +26,7 @@ npm init -y
 1. Los archivos de módulos deberían tener la extensión `.mjs`
 2. En el archivo `package.json`, añade este descriptor en el primer nivel de JSON:
 ```
-"type": "modulo"
+"type": "module"
 ```
 
 ## Ejecutar los test,
