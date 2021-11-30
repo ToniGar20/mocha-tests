@@ -1,0 +1,21 @@
+{
+  "name": "tests-unitaris-mochajs",
+  "description": "tests unitaris",
+  "type": "module",
+  "scripts": {
+    "test": "mocha --require @babel/polyfill --require @babel/register test"
+  },
+  "keywords": [
+    "mocha",
+    "tests"
+  ],
+  "devDependencies": {
+    "axios": "^0.21.4",
+    "mocha": "^9.1.3"
+  },
+  "dependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/register": "^7.16.0"
+  }
+}
