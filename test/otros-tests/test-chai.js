@@ -1,45 +1,45 @@
 /**
- *  TESTS AMB CHAI
+ *  TESTS con CHAI
  * 
- *  He emprat la documentació de Chai, https://www.chaijs.com/
+ *  Documentación de Chai, https://www.chaijs.com/
  * 
- *  assert --> TDD (clàssic)
- *  expect, should --> BDD (més modern)
+ *  assert --> TDD (clásico)
+ *  expect, should --> BDD (más moderno)
  *
  */
 
 
 //var assert = require("chai").assert;
 //var expect = require("chai").expect;
-//const operacions = require("../src/operacions");
+//const operaciones = require("../src/operaciones.mjs");
 
 
 import chai from 'chai';
-import {creaArrayDe3} from '../src/js/operacions.mjs';
+import {creaArrayDe3} from '../src/js/operaciones.mjs';
 
 
- /* DESCRIBE: apartat */
-describe("#proves amb creaArrayDe3()", function () {
+ /* DESCRIBE: apartado */
+describe("#pruebas con creaArrayDe3()", function () {
     /* IT: TEST CASE */
   it("la longitud es 3", function () {
     //assert.lengthOf()
     chai.assert.lengthOf(
       creaArrayDe3(1, 2, 3),
       3,
-      "array es de longitud 3"
+      "Array es de longitud 3"
     );
     //expect().to.have.length()
     chai.expect(creaArrayDe3(1, 2, 3)).to.have.length(3);
   });
 
-  it("Els tres elements de l'array estan inclosos a dins d'ell", function () {
+  it("Los tres elementos del array están incluidos en él", function () {
     //expect().to.include()
     chai.expect(creaArrayDe3(10, 20, 35)).to.include(10);
     chai.expect(creaArrayDe3(10, 20, 35)).to.include(20);
     chai.expect(creaArrayDe3(10, 20, 35)).to.include(35);
   });
 
-  /* CONTEXT: Purament descriptiu, subapartat dins un Describe */
+  /* CONTEXT: Puramente descriptivo, subapartado en un Describe */
   context("amb numeros", function () {
     it("Els tres elements són de tipus 'number", function () {
       //assert.typeOf

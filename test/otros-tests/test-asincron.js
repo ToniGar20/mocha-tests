@@ -1,6 +1,6 @@
 /**
  * 
- * Prova de Mocha asincron. Amb Axios se simplifica el procés, amb fetch suposa més linies de codi
+ * Mocha asincrono. Con Axios se simplifica el proceso, con fetch supone més lineas de código
  * 
  * https://masteringjs.io/tutorials/mocha/async
  */
@@ -12,10 +12,10 @@
 import assert from 'assert';
 import axios from 'axios';
 import fetch from 'node-fetch';
-import {suma} from '../src/js/operacions.mjs';
+import {suma} from '../src/js/operaciones.mjs';
 
 
-// Amb axios (tutorial adalt)
+// Amb Axios
 
 describe("axios get sobre httpbin, answer = 42", function () {
   it("works", async function () {
@@ -27,7 +27,7 @@ describe("axios get sobre httpbin, answer = 42", function () {
   });
 });
 
-// Amb fetch (ho he fet jo)
+// Con fetch
 
 describe("fetch sobre httpbin, answer = 42", function () {
     it("works", async function () {
